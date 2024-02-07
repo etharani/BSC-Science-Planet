@@ -1,0 +1,10 @@
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\bin\Debug\BScSciencePlanet.exe.config
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\bin\Debug\BScSciencePlanet.exe
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\bin\Debug\BScSciencePlanet.pdb
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.csproj.AssemblyReference.cache
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.Form1.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.Properties.Resources.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.csproj.GenerateResource.cache
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.csproj.CoreCompileInputs.cache
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.exe
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.pdb
