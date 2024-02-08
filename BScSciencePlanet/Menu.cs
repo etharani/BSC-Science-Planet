@@ -14,9 +14,11 @@ namespace BScSciencePlanet
     public partial class Menu : Form
     {
         string connectionstring = "Server=DESKTOP-NMNKSVA;Database=BSC;User Id = sa; Password=thara4411;";
+        DAL.Student s;
         public Menu()
         {
             InitializeComponent();
+            s = new DAL.Student();
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -26,14 +28,15 @@ namespace BScSciencePlanet
 
         private void Showdetails_Click(object sender, EventArgs e)
         {
-            Form1 addnew=new Form1();
+            Form1 addnew=new Form1(this);
             addnew.Show();
             this.Close();
         }
 
         private void Menu_Load(object sender, EventArgs e)
         {
-           try
+            s.View(dgv1);
+          /* try
             {
                 SqlConnection con = new SqlConnection(connectionstring);
                 using (con)
@@ -60,7 +63,7 @@ namespace BScSciencePlanet
                 MessageBox.Show(ex.Message.ToString());
                 throw;
 
-            }
+            }*/
          
         }
 
