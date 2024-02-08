@@ -21,5 +21,11 @@ namespace BScSciencePlanet
         {
 
         }
+
+        private void btnsave_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+        }
     }
 }

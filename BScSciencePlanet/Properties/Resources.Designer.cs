@@ -73,6 +73,66 @@ namespace BScSciencePlanet.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bsc_Home {
+            get {
+                object obj = ResourceManager.GetObject("Bsc_Home", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bsc1 {
+            get {
+                object obj = ResourceManager.GetObject("bsc1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bsc11 {
+            get {
+                object obj = ResourceManager.GetObject("bsc11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bsc2 {
+            get {
+                object obj = ResourceManager.GetObject("bsc2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bschome {
+            get {
+                object obj = ResourceManager.GetObject("Bschome", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bschome1 {
+            get {
+                object obj = ResourceManager.GetObject("Bschome1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PNG____BSC_SCIENCE_PLANET_LOGO_BY_PIRAGALANATHAN {
             get {
                 object obj = ResourceManager.GetObject("PNG .. BSC SCIENCE PLANET LOGO BY-PIRAGALANATHAN", resourceCulture);

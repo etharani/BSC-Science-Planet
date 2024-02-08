@@ -59,7 +59,7 @@
             this.txtmothername = new System.Windows.Forms.TextBox();
             this.txtmotherwork = new System.Windows.Forms.TextBox();
             this.txtlastname = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -341,14 +341,15 @@
             this.txtlastname.Size = new System.Drawing.Size(351, 25);
             this.txtlastname.TabIndex = 26;
             // 
-            // button1
+            // btnsave
             // 
-            this.button1.Location = new System.Drawing.Point(552, 475);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 34);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnsave.Location = new System.Drawing.Point(948, 507);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(147, 34);
+            this.btnsave.TabIndex = 33;
+            this.btnsave.Text = "Save";
+            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // Form1
             // 
@@ -358,7 +359,7 @@
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1107, 563);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnsave);
             this.Controls.Add(this.txtclass);
             this.Controls.Add(this.txtresult);
             this.Controls.Add(this.txtmotherphone);
@@ -433,7 +434,7 @@
         private System.Windows.Forms.TextBox txtmothername;
         private System.Windows.Forms.TextBox txtmotherwork;
         private System.Windows.Forms.TextBox txtlastname;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnsave;
     }
 }
 

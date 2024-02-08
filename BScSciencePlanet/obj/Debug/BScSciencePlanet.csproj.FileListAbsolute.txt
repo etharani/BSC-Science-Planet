@@ -8,3 +8,5 @@ C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScScien
 C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.csproj.CoreCompileInputs.cache
 C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.exe
 C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.pdb
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.Home.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.Menu.resources
