@@ -10,32 +10,17 @@ using System.Windows.Forms;
 
 namespace BScSciencePlanet
 {
-    public partial class Form1 : Form
+    public partial class Update : Form
     {
-        public Form1()
+        public Update()
         {
             InitializeComponent();
         }
 
-        private void StudentFirstName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnsave_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btngomenu_Click(object sender, EventArgs e)
         {
-            Menu menu = new Menu();
-            menu.Show();
+            Menu menu1 = new Menu();
+            menu1.Show();
             this.Close();
         }
     }

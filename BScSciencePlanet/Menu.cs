@@ -26,7 +26,14 @@ namespace BScSciencePlanet
 
         private void Showdetails_Click(object sender, EventArgs e)
         {
-            try
+            Form1 addnew=new Form1();
+            addnew.Show();
+            this.Close();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+           try
             {
                 SqlConnection con = new SqlConnection(connectionstring);
                 using (con)
@@ -54,6 +61,19 @@ namespace BScSciencePlanet
                 throw;
 
             }
+         
+        }
+
+        private void update_Click(object sender, EventArgs e)
+        {
+            Update update=new Update();
+            update.Show();
+            this.Close();
+        }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

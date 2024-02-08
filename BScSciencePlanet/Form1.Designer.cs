@@ -30,7 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.LStudentFirstName = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.LFatherPhoneNumber = new System.Windows.Forms.Label();
             this.LFatherWork = new System.Windows.Forms.Label();
@@ -60,6 +59,9 @@
             this.txtmotherwork = new System.Windows.Forms.TextBox();
             this.txtlastname = new System.Windows.Forms.TextBox();
             this.btnsave = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btngomenu = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,6 +78,7 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "BSC Science Planet";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // LStudentFirstName
             // 
@@ -88,30 +91,15 @@
             this.LStudentFirstName.Text = "Student First Name :";
             this.LStudentFirstName.Click += new System.EventHandler(this.StudentFirstName_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox1.Image = global::BScSciencePlanet.Properties.Resources.PNG____BSC_SCIENCE_PLANET_LOGO_BY_PIRAGALANATHAN;
-            this.pictureBox1.Location = new System.Drawing.Point(302, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(441, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(209, 35);
+            this.label2.Size = new System.Drawing.Size(273, 35);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Student Details";
+            this.label2.Text = "New Student Details";
             // 
             // LFatherPhoneNumber
             // 
@@ -329,6 +317,7 @@
             // 
             // txtmotherwork
             // 
+            this.txtmotherwork.ForeColor = System.Drawing.SystemColors.InfoText;
             this.txtmotherwork.Location = new System.Drawing.Point(748, 271);
             this.txtmotherwork.Name = "txtmotherwork";
             this.txtmotherwork.Size = new System.Drawing.Size(351, 25);
@@ -343,13 +332,57 @@
             // 
             // btnsave
             // 
-            this.btnsave.Location = new System.Drawing.Point(948, 507);
+            this.btnsave.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnsave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsave.Location = new System.Drawing.Point(987, 451);
             this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(147, 34);
+            this.btnsave.Size = new System.Drawing.Size(112, 34);
             this.btnsave.TabIndex = 33;
             this.btnsave.Text = "Save";
-            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(0, 503);
+            this.label3.Margin = new System.Windows.Forms.Padding(0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(1107, 46);
+            this.label3.TabIndex = 34;
+            this.label3.Text = "Continuous practice and unremitting effort is the way to success...!";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btngomenu
+            // 
+            this.btngomenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btngomenu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btngomenu.Location = new System.Drawing.Point(859, 451);
+            this.btngomenu.Name = "btngomenu";
+            this.btngomenu.Size = new System.Drawing.Size(112, 34);
+            this.btngomenu.TabIndex = 35;
+            this.btngomenu.Text = "Go to Menu";
+            this.btngomenu.UseVisualStyleBackColor = false;
+            this.btngomenu.Click += new System.EventHandler(this.btngomenu_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox1.Image = global::BScSciencePlanet.Properties.Resources.PNG____BSC_SCIENCE_PLANET_LOGO_BY_PIRAGALANATHAN;
+            this.pictureBox1.Location = new System.Drawing.Point(302, 9);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(80, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -358,7 +391,9 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1107, 563);
+            this.ClientSize = new System.Drawing.Size(1107, 549);
+            this.Controls.Add(this.btngomenu);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.txtclass);
             this.Controls.Add(this.txtresult);
@@ -435,6 +470,8 @@
         private System.Windows.Forms.TextBox txtmotherwork;
         private System.Windows.Forms.TextBox txtlastname;
         private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btngomenu;
     }
 }
 
