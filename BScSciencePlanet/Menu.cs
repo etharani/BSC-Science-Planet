@@ -28,7 +28,7 @@ namespace BScSciencePlanet
 
         private void Showdetails_Click(object sender, EventArgs e)
         {
-            Form1 addnew=new Form1(this);
+            Form1 addnew=new Form1();
             addnew.Show();
             this.Close();
         }

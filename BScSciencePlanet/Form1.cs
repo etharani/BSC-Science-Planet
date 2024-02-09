@@ -12,13 +12,12 @@ namespace BScSciencePlanet
 {
     public partial class Form1 : Form
     {
-        Menu menu;
+        
         DAL.Student student;
         String id = null;
-        public Form1(Menu m)
+        public Form1()
         {
             InitializeComponent();
-            menu = m;
             student = new DAL.Student();
         }
 
@@ -143,7 +142,6 @@ namespace BScSciencePlanet
                   
                     Reset();
                     DialogResult dialogR = MessageBox.Show("Add other student details?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-                   // menu.Menu_Load(sender, e);
                     Reset();
                     if (dialogR == DialogResult.No)
                     {
