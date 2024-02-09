@@ -38,6 +38,32 @@ namespace BScSciencePlanet.DAL
             }
         }
 
+        public Boolean Update(String firstname, String lastname, String dateofbirth, String grade, String fathername, String fatherwork, String fatherphone, String mothername, String motherwork, String motherphone, String schoolname, String result, String address, String Pattern,String id)
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(connectionstring);
+                ConnectionState state = con.State;
+                if (state != ConnectionState.Open)
+                {
+                    con.Open();
+
+                }
+                SqlCommand cmd = new SqlCommand("update BScStudent set StudentFirstName ='" + firstname + "',StudentLastName ='" + lastname + "',DateOfBirth ='" + dateofbirth + "',Grade ='" + grade + "',FatherName ='" + fathername + "',FatherWork ='" + fatherwork + "',FatherPhoneNumber ='" + fatherphone + "',MotherName ='" + mothername + "',MotherWork ='" + motherwork + "',MotherPhoneNumber ='" + motherphone + "',SchoolName ='" + schoolname + "',ScholarshipResult ='" + result + "',Address = '" + address + "',ClassGoPattern ='" + Pattern + "',where ID='" + id + "' ", con);
+                cmd.ExecuteNonQuery();
+                cmd.Dispose();
+                con.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+                return false;
+                throw;
+
+            }
+        }
+
         public void View(DataGridView dgv)
         {
             try
@@ -71,5 +97,76 @@ namespace BScSciencePlanet.DAL
             dgv.Columns["id"].Visible = false;
         }
 
+        public DataTable oneViewtablemethod(String id)
+        {
+            DataTable d = new DataTable();
+            try
+            {
+                SqlConnection con = new SqlConnection(connectionstring);
+                using (con)
+                {
+
+                    SqlCommand cmd = new SqlCommand("select * from BScStudent where ID ='" + id + "'", con);
+                    using (cmd)
+                    {
+                        ConnectionState state = con.State;
+                        if (state != ConnectionState.Open)
+                        {
+                            con.Open();
+
+                        }
+
+
+                        d.Load(cmd.ExecuteReader());
+                        con.Close();
+                        return d;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+                return null;
+                throw;
+
+            }
+
+        }
+
+        public DataTable AllViewtablemethod()
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                SqlConnection con = new SqlConnection(connectionstring);
+                using (con)
+                {
+
+                    SqlCommand cmd = new SqlCommand("select * from BScStudent", con);
+                    using (cmd)
+                    {
+                        ConnectionState state = con.State;
+                        if (state != ConnectionState.Open)
+                        {
+                            con.Open();
+
+                        }
+
+
+                        dt.Load(cmd.ExecuteReader());
+                        con.Close();
+                        return dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+                return null;
+                throw;
+
+            }
+
+        }
     }
 }

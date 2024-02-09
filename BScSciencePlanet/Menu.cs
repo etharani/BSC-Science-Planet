@@ -15,6 +15,7 @@ namespace BScSciencePlanet
     {
         string connectionstring = "Server=DESKTOP-NMNKSVA;Database=BSC;User Id = sa; Password=thara4411;";
         DAL.Student s;
+        String id = null;
         public Menu()
         {
             InitializeComponent();
@@ -36,46 +37,37 @@ namespace BScSciencePlanet
         private void Menu_Load(object sender, EventArgs e)
         {
             s.View(dgv1);
-          /* try
-            {
-                SqlConnection con = new SqlConnection(connectionstring);
-                using (con)
-                {
-                    SqlCommand cmd = new SqlCommand("select * from BScStudent", con);
-                    using (cmd)
-                    {
-                        ConnectionState state = con.State;
-                        if (state != ConnectionState.Open)
-                        {
-                            con.Open();
-
-                        }
-                        //   con.Open();
-                        DataTable dt = new DataTable();
-                        dt.Load(cmd.ExecuteReader());
-                        dgv1.DataSource = dt;
-                        con.Close();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message.ToString());
-                throw;
-
-            }*/
          
         }
 
         private void update_Click(object sender, EventArgs e)
         {
-            Update update=new Update();
-            update.Show();
-            this.Close();
+            if (string.IsNullOrEmpty(this.id))
+            {
+                MessageBox.Show("Please Double Click Data Grid Row!");
+                return;
+            }
+            Update up = new Update(this.id, this.dgv1);
+            up.ShowDialog();
         }
 
         private void btnsearch_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void dgv1_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            try
+            {
+                this.id = dgv1.SelectedRows[0].Cells["id"].Value.ToString();
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+
+            }
 
         }
     }

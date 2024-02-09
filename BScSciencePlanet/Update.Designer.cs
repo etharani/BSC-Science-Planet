@@ -114,6 +114,7 @@
             this.btnupdate.TabIndex = 65;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // txtclass
             // 
@@ -405,6 +406,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Update";
             this.Text = "Update";
+            this.Load += new System.EventHandler(this.Update_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
