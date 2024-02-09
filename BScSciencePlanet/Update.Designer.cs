@@ -61,6 +61,9 @@
             this.LFatherPhoneNumber = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.LStudentFirstName = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btncancel = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -81,9 +84,9 @@
             // 
             this.btngomenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btngomenu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btngomenu.Location = new System.Drawing.Point(879, 456);
+            this.btngomenu.Location = new System.Drawing.Point(741, 456);
             this.btngomenu.Name = "btngomenu";
-            this.btngomenu.Size = new System.Drawing.Size(112, 34);
+            this.btngomenu.Size = new System.Drawing.Size(119, 34);
             this.btngomenu.TabIndex = 67;
             this.btngomenu.Text = "Go to Menu";
             this.btngomenu.UseVisualStyleBackColor = false;
@@ -108,7 +111,7 @@
             // 
             this.btnupdate.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnupdate.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnupdate.Location = new System.Drawing.Point(1007, 456);
+            this.btnupdate.Location = new System.Drawing.Point(879, 456);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(112, 34);
             this.btnupdate.TabIndex = 65;
@@ -365,12 +368,41 @@
             this.LStudentFirstName.TabIndex = 36;
             this.LStudentFirstName.Text = "Student First Name :";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox1.Image = global::BScSciencePlanet.Properties.Resources.PNG____BSC_SCIENCE_PLANET_LOGO_BY_PIRAGALANATHAN;
+            this.pictureBox1.Location = new System.Drawing.Point(318, 9);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(80, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 68;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btncancel
+            // 
+            this.btncancel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btncancel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncancel.Location = new System.Drawing.Point(1007, 456);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(112, 34);
+            this.btncancel.TabIndex = 69;
+            this.btncancel.Text = "Cancel";
+            this.btncancel.UseVisualStyleBackColor = false;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
+            // 
             // Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(1151, 554);
+            this.Controls.Add(this.btncancel);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btngomenu);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnupdate);
@@ -407,6 +439,7 @@
             this.Name = "Update";
             this.Text = "Update";
             this.Load += new System.EventHandler(this.Update_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -447,5 +480,7 @@
         private System.Windows.Forms.Label LFatherPhoneNumber;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label LStudentFirstName;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btncancel;
     }
 }

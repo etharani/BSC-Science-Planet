@@ -37,7 +37,7 @@ namespace BScSciencePlanet
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            s.View(dgv1);
+            s.ShortView(dgv1);
          
         }
 
@@ -95,6 +95,23 @@ namespace BScSciencePlanet
 
                 }
             }
+        }
+
+        private void Fulldetails_Click(object sender, EventArgs e)
+        {
+            PersonalDetails personal = new PersonalDetails();
+            personal.Show();
+            this.Hide();
+        }
+
+        private void engineer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btncancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

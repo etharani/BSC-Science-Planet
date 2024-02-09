@@ -62,6 +62,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btngomenu = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btncancel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -334,7 +335,7 @@
             // 
             this.btnsave.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnsave.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsave.Location = new System.Drawing.Point(987, 451);
+            this.btnsave.Location = new System.Drawing.Point(859, 451);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(112, 34);
             this.btnsave.TabIndex = 33;
@@ -361,9 +362,9 @@
             // 
             this.btngomenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btngomenu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btngomenu.Location = new System.Drawing.Point(859, 451);
+            this.btngomenu.Location = new System.Drawing.Point(727, 451);
             this.btngomenu.Name = "btngomenu";
-            this.btngomenu.Size = new System.Drawing.Size(112, 34);
+            this.btngomenu.Size = new System.Drawing.Size(117, 34);
             this.btngomenu.TabIndex = 35;
             this.btngomenu.Text = "Go to Menu";
             this.btngomenu.UseVisualStyleBackColor = false;
@@ -384,6 +385,18 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // btncancel
+            // 
+            this.btncancel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btncancel.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncancel.Location = new System.Drawing.Point(987, 451);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(112, 34);
+            this.btncancel.TabIndex = 36;
+            this.btncancel.Text = "Cancel";
+            this.btncancel.UseVisualStyleBackColor = false;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -392,6 +405,7 @@
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1107, 549);
+            this.Controls.Add(this.btncancel);
             this.Controls.Add(this.btngomenu);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnsave);
@@ -472,6 +486,7 @@
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btngomenu;
+        private System.Windows.Forms.Button btncancel;
     }
 }
 

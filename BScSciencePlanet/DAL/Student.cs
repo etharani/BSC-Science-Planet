@@ -118,7 +118,7 @@ namespace BScSciencePlanet.DAL
                 throw;
 
             }
-            dgv.Columns["id"].Visible = false;
+            dgv.Columns["ID"].Visible = false;
         }
 
         public DataTable oneViewtablemethod(String id)
@@ -226,6 +226,39 @@ namespace BScSciencePlanet.DAL
 
             }
 
+        }
+
+        public void ShortView(DataGridView dgv)
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(connectionstring);
+                using (con)
+                {
+                    SqlCommand cmd = new SqlCommand("select ID,StudentFirstName,StudentLastName,Grade,SchoolName from BScStudent", con);
+                    using (cmd)
+                    {
+                        ConnectionState state = con.State;
+                        if (state != ConnectionState.Open)
+                        {
+                            con.Open();
+
+                        }
+
+                        DataTable dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        dgv.DataSource = dt;
+                        con.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+                throw;
+
+            }
+            dgv.Columns["ID"].Visible = false;
         }
     }
 }

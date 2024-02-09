@@ -163,5 +163,10 @@ namespace BScSciencePlanet
             menu.Show();
             this.Close();
         }
+
+        private void btncancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

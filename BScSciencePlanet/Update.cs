@@ -184,5 +184,10 @@ namespace BScSciencePlanet
             txtclass.Text = dtstudent.Rows[0]["ClassGoPattern"].ToString();
 
         }
+
+        private void btncancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
