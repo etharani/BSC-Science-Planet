@@ -140,6 +140,7 @@
             this.delete.TabIndex = 37;
             this.delete.Text = "Delete Student Details";
             this.delete.UseVisualStyleBackColor = false;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
             // txtsearch
             // 

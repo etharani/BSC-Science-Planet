@@ -49,7 +49,7 @@ namespace BScSciencePlanet.DAL
                     con.Open();
 
                 }
-                SqlCommand cmd = new SqlCommand("update BScStudent set StudentFirstName ='" + firstname + "',StudentLastName ='" + lastname + "',DateOfBirth ='" + dateofbirth + "',Grade ='" + grade + "',FatherName ='" + fathername + "',FatherWork ='" + fatherwork + "',FatherPhoneNumber ='" + fatherphone + "',MotherName ='" + mothername + "',MotherWork ='" + motherwork + "',MotherPhoneNumber ='" + motherphone + "',SchoolName ='" + schoolname + "',ScholarshipResult ='" + result + "',Address = '" + address + "',ClassGoPattern ='" + Pattern + "',where ID='" + id + "' ", con);
+                SqlCommand cmd = new SqlCommand("update BScStudent set StudentFirstName ='" + firstname + "',StudentLastName ='" + lastname + "',DateOfBirth ='" + dateofbirth + "',Grade ='" + grade + "',FatherName ='" + fathername + "',FatherWork ='" + fatherwork + "',FatherPhoneNumber ='" + fatherphone + "',MotherName ='" + mothername + "',MotherWork ='" + motherwork + "',MotherPhoneNumber ='" + motherphone + "',SchoolName ='" + schoolname + "',ScholarshipResult ='" + result + "',Address = '" + address + "',ClassGoPattern ='" + Pattern + "' where ID='" + id + "' ", con);
                 cmd.ExecuteNonQuery();
                 cmd.Dispose();
                 con.Close();
@@ -64,6 +64,30 @@ namespace BScSciencePlanet.DAL
             }
         }
 
+        public Boolean Delete(String id)
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(connectionstring);
+                ConnectionState state = con.State;
+                if (state != ConnectionState.Open)
+                {
+                    con.Open();
+                }
+                SqlCommand cmd = new SqlCommand("delete from BScStudent where ID='" + id + " '", con);
+                cmd.ExecuteNonQuery();
+                cmd.Dispose();
+                con.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+                return false;
+                throw;
+
+            }
+        }
         public void View(DataGridView dgv)
         {
             try
@@ -156,6 +180,41 @@ namespace BScSciencePlanet.DAL
                         dt.Load(cmd.ExecuteReader());
                         con.Close();
                         return dt;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+                return null;
+                throw;
+
+            }
+
+        }
+
+        public DataTable SearchStudent(String searchname)
+        {
+            DataTable d = new DataTable();
+            try
+            {
+                SqlConnection con = new SqlConnection(connectionstring);
+                using (con)
+                {
+                    SqlCommand cmd = new SqlCommand("select * from BScStudent  where concat (StudentFirstName,StudentLastName,DateOfBirth,Grade,FatherName,FatherWork,FatherPhoneNumber,MotherName,MotherWork,MotherPhoneNumber,SchoolName,ScholarshipResult,Address,ClassGoPattern) like'%" + searchname + "%' ", con);
+                    using (cmd)
+                    {
+                        ConnectionState state = con.State;
+                        if (state != ConnectionState.Open)
+                        {
+                            con.Open();
+
+                        }
+
+
+                        d.Load(cmd.ExecuteReader());
+                        con.Close();
+                        return d;
                     }
                 }
             }
