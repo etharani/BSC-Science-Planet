@@ -10,18 +10,21 @@ using System.Windows.Forms;
 
 namespace BScSciencePlanet
 {
-    public partial class Update : Form
+    public partial class AddNew : Form
     {
-        DAL.Student stu;
+        
+        DAL.Student student;
         String id = null;
-        DataGridView mdatagv;
-        String subject;
-        public Update(String id, DataGridView datagv)
+        String subject = null;
+        public AddNew()
         {
             InitializeComponent();
-            this.id = id;
-            this.mdatagv = datagv; 
-            stu = new DAL.Student();
+            student = new DAL.Student();
+        }
+
+        private void StudentFirstName_Click(object sender, EventArgs e)
+        {
+
         }
 
         private Boolean Validation()
@@ -131,21 +134,8 @@ namespace BScSciencePlanet
             txtclass.Text = "";
             this.id = null;
         }
-
-        private void btngomenu_Click(object sender, EventArgs e)
+        private void btnsave_Click(object sender, EventArgs e)
         {
-            Menu menu1 = new Menu();
-            menu1.Show();
-            this.Close();
-        }
-
-        private void btnupdate_Click(object sender, EventArgs e)
-        { 
-            if (string.IsNullOrEmpty(this.id))
-            {
-                MessageBox.Show("Please Double Click Data Grid Row!");
-                return;
-            }
             if (Validation())
             {
                 if (rdbPhysice.Checked)
@@ -160,15 +150,14 @@ namespace BScSciencePlanet
                 {
                     this.subject = "Technology";
                 }
-                if (stu.Update(txtfirstname.Text, txtlastname.Text, txtbirth.Text, txtgrade.Text, txtfathername.Text, txtfatherwork.Text, txtfatherphone.Text, txtmothername.Text, txtmotherwork.Text, txtmotherphone.Text, txtschoolname.Text, txtresult.Text, txtaddress.Text, txtclass.Text,this.subject, this.id))
+                if (student.Create(txtfirstname.Text, txtlastname.Text, txtbirth.Text,txtgrade.Text, txtfathername.Text, txtfatherwork.Text, txtfatherphone.Text,txtmothername.Text, txtmotherwork.Text, txtmotherphone.Text, txtschoolname.Text, txtresult.Text, txtaddress.Text, txtclass.Text,this.subject))
                 {
-                    DataTable t = stu.AllViewtablemethod();
-                    this.mdatagv.DataSource = t;
-
-                    DialogResult dialogR = MessageBox.Show("Is the edit task completed ?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
-                    if (dialogR == DialogResult.Yes)
-                    {   
-                        Reset();
+                  
+                    Reset();
+                    DialogResult dialogR = MessageBox.Show("Add other student details?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+                    Reset();
+                    if (dialogR == DialogResult.No)
+                    {
                         this.Close();
                     }
 
@@ -176,38 +165,16 @@ namespace BScSciencePlanet
             }
         }
 
-        private void Update_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
-            DataTable dtstudent = stu.oneViewtablemethod(this.id);
-            txtfirstname.Text = dtstudent.Rows[0]["StudentFirstName"].ToString();
-            txtlastname.Text = dtstudent.Rows[0]["StudentLastName"].ToString();
-            txtbirth.Text = dtstudent.Rows[0]["DateOfBirth"].ToString();
-            txtgrade.Text = dtstudent.Rows[0]["Grade"].ToString();
-            txtfathername.Text = dtstudent.Rows[0]["FatherName"].ToString();
-            txtfatherwork.Text = dtstudent.Rows[0]["FatherWork"].ToString();
-            txtfatherphone.Text = dtstudent.Rows[0]["FatherPhoneNumber"].ToString();
-            txtmothername.Text = dtstudent.Rows[0]["MotherName"].ToString();
-            txtmotherwork.Text = dtstudent.Rows[0]["MotherWork"].ToString();
-            txtmotherphone.Text = dtstudent.Rows[0]["MotherPhoneNumber"].ToString();
-            txtschoolname.Text = dtstudent.Rows[0]["SchoolName"].ToString();
-            txtresult.Text = dtstudent.Rows[0]["ScholarshipResult"].ToString();
-            txtaddress.Text = dtstudent.Rows[0]["Address"].ToString();
-            txtclass.Text = dtstudent.Rows[0]["ClassGoPattern"].ToString();
-            this.subject = dtstudent.Rows[0]["Subject"].ToString();
-            if (subject == "Physical Science")
-            {
-                rdbPhysice.Checked = true;
-            }
-            if (subject == "Biological Science")
-            {
-                rdbbio.Checked = true;
-            }
-            if (subject == "Technology")
-            {
-                rdbtech.Checked = true;
-            }
+        }
 
+        private void btngomenu_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.Show();
+            this.Close();
         }
 
         private void btncancel_Click(object sender, EventArgs e)

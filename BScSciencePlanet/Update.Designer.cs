@@ -63,6 +63,10 @@
             this.LStudentFirstName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btncancel = new System.Windows.Forms.Button();
+            this.rdbbio = new System.Windows.Forms.RadioButton();
+            this.rdbtech = new System.Windows.Forms.RadioButton();
+            this.rdbPhysice = new System.Windows.Forms.RadioButton();
+            this.LaSubject = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -395,12 +399,59 @@
             this.btncancel.UseVisualStyleBackColor = false;
             this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
             // 
+            // rdbbio
+            // 
+            this.rdbbio.AutoSize = true;
+            this.rdbbio.Location = new System.Drawing.Point(347, 445);
+            this.rdbbio.Name = "rdbbio";
+            this.rdbbio.Size = new System.Drawing.Size(140, 20);
+            this.rdbbio.TabIndex = 73;
+            this.rdbbio.TabStop = true;
+            this.rdbbio.Text = "Biological Science";
+            this.rdbbio.UseVisualStyleBackColor = true;
+            // 
+            // rdbtech
+            // 
+            this.rdbtech.AutoSize = true;
+            this.rdbtech.Location = new System.Drawing.Point(493, 446);
+            this.rdbtech.Name = "rdbtech";
+            this.rdbtech.Size = new System.Drawing.Size(100, 20);
+            this.rdbtech.TabIndex = 72;
+            this.rdbtech.TabStop = true;
+            this.rdbtech.Text = "Technology";
+            this.rdbtech.UseVisualStyleBackColor = true;
+            // 
+            // rdbPhysice
+            // 
+            this.rdbPhysice.AutoSize = true;
+            this.rdbPhysice.Location = new System.Drawing.Point(213, 445);
+            this.rdbPhysice.Name = "rdbPhysice";
+            this.rdbPhysice.Size = new System.Drawing.Size(131, 20);
+            this.rdbPhysice.TabIndex = 71;
+            this.rdbPhysice.TabStop = true;
+            this.rdbPhysice.Text = "Physical Science";
+            this.rdbPhysice.UseVisualStyleBackColor = true;
+            // 
+            // LaSubject
+            // 
+            this.LaSubject.AutoSize = true;
+            this.LaSubject.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LaSubject.Location = new System.Drawing.Point(34, 447);
+            this.LaSubject.Name = "LaSubject";
+            this.LaSubject.Size = new System.Drawing.Size(69, 19);
+            this.LaSubject.TabIndex = 70;
+            this.LaSubject.Text = "Subject :";
+            // 
             // Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(1151, 554);
+            this.Controls.Add(this.rdbbio);
+            this.Controls.Add(this.rdbtech);
+            this.Controls.Add(this.rdbPhysice);
+            this.Controls.Add(this.LaSubject);
             this.Controls.Add(this.btncancel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btngomenu);
@@ -482,5 +533,9 @@
         private System.Windows.Forms.Label LStudentFirstName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btncancel;
+        private System.Windows.Forms.RadioButton rdbbio;
+        private System.Windows.Forms.RadioButton rdbtech;
+        private System.Windows.Forms.RadioButton rdbPhysice;
+        private System.Windows.Forms.Label LaSubject;
     }
 }

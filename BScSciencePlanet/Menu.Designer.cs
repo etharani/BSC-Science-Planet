@@ -36,14 +36,16 @@
             this.delete = new System.Windows.Forms.Button();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.btnsearch = new System.Windows.Forms.Button();
-            this.Fulldetails = new System.Windows.Forms.Button();
+            this.btnPhysics = new System.Windows.Forms.Button();
+            this.btncancel = new System.Windows.Forms.Button();
+            this.btnbio = new System.Windows.Forms.Button();
+            this.btntech = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.coder = new System.Windows.Forms.PictureBox();
             this.teacher = new System.Windows.Forms.PictureBox();
             this.engineer = new System.Windows.Forms.PictureBox();
             this.doctor = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btncancel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.coder)).BeginInit();
@@ -57,11 +59,11 @@
             // 
             this.dgv1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv1.Location = new System.Drawing.Point(501, 86);
+            this.dgv1.Location = new System.Drawing.Point(501, 79);
             this.dgv1.Name = "dgv1";
             this.dgv1.RowHeadersWidth = 51;
             this.dgv1.RowTemplate.Height = 24;
-            this.dgv1.Size = new System.Drawing.Size(607, 647);
+            this.dgv1.Size = new System.Drawing.Size(607, 654);
             this.dgv1.TabIndex = 0;
             this.dgv1.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgv1_RowHeaderMouseDoubleClick);
             // 
@@ -70,10 +72,11 @@
             this.addnew.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.addnew.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addnew.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.addnew.Location = new System.Drawing.Point(11, 224);
+            this.addnew.Location = new System.Drawing.Point(12, 175);
             this.addnew.Name = "addnew";
-            this.addnew.Size = new System.Drawing.Size(211, 37);
+            this.addnew.Size = new System.Drawing.Size(259, 37);
             this.addnew.TabIndex = 1;
+            this.addnew.Tag = "3";
             this.addnew.Text = "Add New Student";
             this.addnew.UseVisualStyleBackColor = false;
             this.addnew.Click += new System.EventHandler(this.Showdetails_Click);
@@ -111,10 +114,11 @@
             // 
             this.update.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.update.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.update.Location = new System.Drawing.Point(11, 286);
+            this.update.Location = new System.Drawing.Point(11, 238);
             this.update.Name = "update";
-            this.update.Size = new System.Drawing.Size(211, 37);
+            this.update.Size = new System.Drawing.Size(259, 37);
             this.update.TabIndex = 36;
+            this.update.Tag = "4";
             this.update.Text = "Update Student Details";
             this.update.UseVisualStyleBackColor = false;
             this.update.Click += new System.EventHandler(this.update_Click);
@@ -123,10 +127,11 @@
             // 
             this.delete.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.delete.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delete.Location = new System.Drawing.Point(11, 344);
+            this.delete.Location = new System.Drawing.Point(8, 304);
             this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(211, 37);
+            this.delete.Size = new System.Drawing.Size(263, 37);
             this.delete.TabIndex = 37;
+            this.delete.Tag = "5";
             this.delete.Text = "Delete Student Details";
             this.delete.UseVisualStyleBackColor = false;
             this.delete.Click += new System.EventHandler(this.delete_Click);
@@ -139,6 +144,7 @@
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(360, 27);
             this.txtsearch.TabIndex = 42;
+            this.txtsearch.Tag = "2";
             // 
             // btnsearch
             // 
@@ -150,22 +156,63 @@
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(108, 37);
             this.btnsearch.TabIndex = 43;
+            this.btnsearch.Tag = "1";
             this.btnsearch.Text = "Search";
             this.btnsearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsearch.UseVisualStyleBackColor = false;
             this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
-            // Fulldetails
+            // btnPhysics
             // 
-            this.Fulldetails.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Fulldetails.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fulldetails.Location = new System.Drawing.Point(11, 171);
-            this.Fulldetails.Name = "Fulldetails";
-            this.Fulldetails.Size = new System.Drawing.Size(211, 37);
-            this.Fulldetails.TabIndex = 46;
-            this.Fulldetails.Text = "Student Personal Details";
-            this.Fulldetails.UseVisualStyleBackColor = false;
-            this.Fulldetails.Click += new System.EventHandler(this.Fulldetails_Click);
+            this.btnPhysics.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnPhysics.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhysics.Location = new System.Drawing.Point(12, 372);
+            this.btnPhysics.Name = "btnPhysics";
+            this.btnPhysics.Size = new System.Drawing.Size(259, 37);
+            this.btnPhysics.TabIndex = 46;
+            this.btnPhysics.Tag = "6";
+            this.btnPhysics.Text = "Physical Science Student Details";
+            this.btnPhysics.UseVisualStyleBackColor = false;
+            this.btnPhysics.Click += new System.EventHandler(this.btnPhysics_Click);
+            // 
+            // btncancel
+            // 
+            this.btncancel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btncancel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncancel.Location = new System.Drawing.Point(12, 567);
+            this.btncancel.Name = "btncancel";
+            this.btncancel.Size = new System.Drawing.Size(210, 37);
+            this.btncancel.TabIndex = 47;
+            this.btncancel.Tag = "9";
+            this.btncancel.Text = "Cancel";
+            this.btncancel.UseVisualStyleBackColor = false;
+            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
+            // 
+            // btnbio
+            // 
+            this.btnbio.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnbio.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbio.Location = new System.Drawing.Point(12, 438);
+            this.btnbio.Name = "btnbio";
+            this.btnbio.Size = new System.Drawing.Size(255, 37);
+            this.btnbio.TabIndex = 48;
+            this.btnbio.Tag = "7";
+            this.btnbio.Text = "Biological Science Student Details";
+            this.btnbio.UseVisualStyleBackColor = false;
+            this.btnbio.Click += new System.EventHandler(this.btnbio_Click);
+            // 
+            // btntech
+            // 
+            this.btntech.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btntech.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntech.Location = new System.Drawing.Point(12, 502);
+            this.btntech.Name = "btntech";
+            this.btntech.Size = new System.Drawing.Size(255, 37);
+            this.btntech.TabIndex = 49;
+            this.btntech.Tag = "8";
+            this.btntech.Text = "Technology Student Details";
+            this.btntech.UseVisualStyleBackColor = false;
+            this.btntech.Click += new System.EventHandler(this.btntech_Click);
             // 
             // pictureBox2
             // 
@@ -183,9 +230,9 @@
             // 
             this.coder.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.coder.Image = global::BScSciencePlanet.Properties.Resources.developer;
-            this.coder.Location = new System.Drawing.Point(141, 620);
+            this.coder.Location = new System.Drawing.Point(284, 578);
             this.coder.Name = "coder";
-            this.coder.Size = new System.Drawing.Size(106, 79);
+            this.coder.Size = new System.Drawing.Size(106, 88);
             this.coder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.coder.TabIndex = 41;
             this.coder.TabStop = false;
@@ -194,7 +241,7 @@
             // 
             this.teacher.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.teacher.Image = global::BScSciencePlanet.Properties.Resources.teacher;
-            this.teacher.Location = new System.Drawing.Point(112, 526);
+            this.teacher.Location = new System.Drawing.Point(284, 438);
             this.teacher.Name = "teacher";
             this.teacher.Size = new System.Drawing.Size(114, 105);
             this.teacher.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -206,7 +253,7 @@
             this.engineer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.engineer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.engineer.Image = global::BScSciencePlanet.Properties.Resources.architec;
-            this.engineer.Location = new System.Drawing.Point(213, 548);
+            this.engineer.Location = new System.Drawing.Point(381, 506);
             this.engineer.Name = "engineer";
             this.engineer.Size = new System.Drawing.Size(102, 98);
             this.engineer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -218,9 +265,9 @@
             // 
             this.doctor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.doctor.Image = global::BScSciencePlanet.Properties.Resources.doctor;
-            this.doctor.Location = new System.Drawing.Point(227, 643);
+            this.doctor.Location = new System.Drawing.Point(371, 633);
             this.doctor.Name = "doctor";
-            this.doctor.Size = new System.Drawing.Size(112, 85);
+            this.doctor.Size = new System.Drawing.Size(112, 90);
             this.doctor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.doctor.TabIndex = 38;
             this.doctor.TabStop = false;
@@ -240,26 +287,16 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // btncancel
-            // 
-            this.btncancel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btncancel.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncancel.Location = new System.Drawing.Point(12, 402);
-            this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(210, 37);
-            this.btncancel.TabIndex = 47;
-            this.btncancel.Text = "Cancel";
-            this.btncancel.UseVisualStyleBackColor = false;
-            this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(1109, 777);
+            this.Controls.Add(this.btntech);
+            this.Controls.Add(this.btnbio);
             this.Controls.Add(this.btncancel);
-            this.Controls.Add(this.Fulldetails);
+            this.Controls.Add(this.btnPhysics);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.txtsearch);
@@ -305,7 +342,9 @@
         private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button Fulldetails;
+        private System.Windows.Forms.Button btnPhysics;
         private System.Windows.Forms.Button btncancel;
+        private System.Windows.Forms.Button btnbio;
+        private System.Windows.Forms.Button btntech;
     }
 }

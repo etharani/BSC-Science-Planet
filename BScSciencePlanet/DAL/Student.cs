@@ -12,7 +12,7 @@ namespace BScSciencePlanet.DAL
     public class Student
     {
         string connectionstring = "Server=DESKTOP-NMNKSVA;Database=BSC;User Id = sa; Password=thara4411;";
-        public Boolean Create(String firstname, String lastname, String dateofbirth, String grade, String fathername, String fatherwork, String fatherphone, String mothername, String motherwork, String motherphone, String schoolname,String result, String address, String Pattern)
+        public Boolean Create(String firstname, String lastname, String dateofbirth, String grade, String fathername, String fatherwork, String fatherphone, String mothername, String motherwork, String motherphone, String schoolname,String result, String address, String pattern,String subject)
         {
             try
             {
@@ -23,7 +23,7 @@ namespace BScSciencePlanet.DAL
                     con.Open();
 
                 }
-                SqlCommand cmd = new SqlCommand("insert into BScStudent(StudentFirstName,StudentLastName,DateOfBirth,Grade,FatherName,FatherWork,FatherPhoneNumber,MotherName,MotherWork,MotherPhoneNumber,SchoolName,ScholarshipResult,Address,ClassGoPattern) values('" + firstname + "','" + lastname + "','" + dateofbirth + "','" + grade + "','" + fathername + "','" + fatherwork + "','" + fatherphone + "','" + mothername + "','" + motherwork + "','" + motherphone + "','" + schoolname + "','"+ result + "','"+ address + "','"+ Pattern + "')", con);
+                SqlCommand cmd = new SqlCommand("insert into BScStudent(StudentFirstName,StudentLastName,DateOfBirth,Grade,FatherName,FatherWork,FatherPhoneNumber,MotherName,MotherWork,MotherPhoneNumber,SchoolName,ScholarshipResult,Address,ClassGoPattern,Subject) values('" + firstname + "','" + lastname + "','" + dateofbirth + "','" + grade + "','" + fathername + "','" + fatherwork + "','" + fatherphone + "','" + mothername + "','" + motherwork + "','" + motherphone + "','" + schoolname + "','"+ result + "','"+ address + "','"+ pattern + "','"+ subject + "')", con);
                 cmd.ExecuteNonQuery();
                 cmd.Dispose();
                 con.Close();
@@ -38,7 +38,7 @@ namespace BScSciencePlanet.DAL
             }
         }
 
-        public Boolean Update(String firstname, String lastname, String dateofbirth, String grade, String fathername, String fatherwork, String fatherphone, String mothername, String motherwork, String motherphone, String schoolname, String result, String address, String Pattern,String id)
+        public Boolean Update(String firstname, String lastname, String dateofbirth, String grade, String fathername, String fatherwork, String fatherphone, String mothername, String motherwork, String motherphone, String schoolname, String result, String address, String pattern,String subject ,String id)
         {
             try
             {
@@ -49,7 +49,7 @@ namespace BScSciencePlanet.DAL
                     con.Open();
 
                 }
-                SqlCommand cmd = new SqlCommand("update BScStudent set StudentFirstName ='" + firstname + "',StudentLastName ='" + lastname + "',DateOfBirth ='" + dateofbirth + "',Grade ='" + grade + "',FatherName ='" + fathername + "',FatherWork ='" + fatherwork + "',FatherPhoneNumber ='" + fatherphone + "',MotherName ='" + mothername + "',MotherWork ='" + motherwork + "',MotherPhoneNumber ='" + motherphone + "',SchoolName ='" + schoolname + "',ScholarshipResult ='" + result + "',Address = '" + address + "',ClassGoPattern ='" + Pattern + "' where ID='" + id + "' ", con);
+                SqlCommand cmd = new SqlCommand("update BScStudent set StudentFirstName ='" + firstname + "',StudentLastName ='" + lastname + "',DateOfBirth ='" + dateofbirth + "',Grade ='" + grade + "',FatherName ='" + fathername + "',FatherWork ='" + fatherwork + "',FatherPhoneNumber ='" + fatherphone + "',MotherName ='" + mothername + "',MotherWork ='" + motherwork + "',MotherPhoneNumber ='" + motherphone + "',SchoolName ='" + schoolname + "',ScholarshipResult ='" + result + "',Address = '" + address + "',ClassGoPattern ='" + pattern + "',Subject='"+subject+"' where ID='" + id + "' ", con);
                 cmd.ExecuteNonQuery();
                 cmd.Dispose();
                 con.Close();
@@ -88,6 +88,105 @@ namespace BScSciencePlanet.DAL
 
             }
         }
+        public void PhysicsView(DataGridView dgv)
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(connectionstring);
+                using (con)
+                {
+                    SqlCommand cmd = new SqlCommand("select * from BScStudent where Subject='Physical Science'", con);
+                    using (cmd)
+                    {
+                        ConnectionState state = con.State;
+                        if (state != ConnectionState.Open)
+                        {
+                            con.Open();
+
+                        }
+
+                        DataTable dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        dgv.DataSource = dt;
+                        con.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+                throw;
+
+            }
+            dgv.Columns["ID"].Visible = false;
+        }
+
+        public void BioView(DataGridView dgv)
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(connectionstring);
+                using (con)
+                {
+                    SqlCommand cmd = new SqlCommand("select * from BScStudent where Subject='Biological Science'", con);
+                    using (cmd)
+                    {
+                        ConnectionState state = con.State;
+                        if (state != ConnectionState.Open)
+                        {
+                            con.Open();
+
+                        }
+
+                        DataTable dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        dgv.DataSource = dt;
+                        con.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+                throw;
+
+            }
+            dgv.Columns["ID"].Visible = false;
+        }
+
+        public void TechView(DataGridView dgv)
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(connectionstring);
+                using (con)
+                {
+                    SqlCommand cmd = new SqlCommand("select * from BScStudent where Subject='Technology Science'", con);
+                    using (cmd)
+                    {
+                        ConnectionState state = con.State;
+                        if (state != ConnectionState.Open)
+                        {
+                            con.Open();
+
+                        }
+
+                        DataTable dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        dgv.DataSource = dt;
+                        con.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+                throw;
+
+            }
+            dgv.Columns["ID"].Visible = false;
+        }
+
         public void View(DataGridView dgv)
         {
             try
@@ -201,7 +300,7 @@ namespace BScSciencePlanet.DAL
                 SqlConnection con = new SqlConnection(connectionstring);
                 using (con)
                 {
-                    SqlCommand cmd = new SqlCommand("select * from BScStudent  where concat (StudentFirstName,StudentLastName,DateOfBirth,Grade,FatherName,FatherWork,FatherPhoneNumber,MotherName,MotherWork,MotherPhoneNumber,SchoolName,ScholarshipResult,Address,ClassGoPattern) like'%" + searchname + "%' ", con);
+                    SqlCommand cmd = new SqlCommand("select * from BScStudent  where concat (StudentFirstName,StudentLastName,DateOfBirth,Grade,FatherName,FatherWork,FatherPhoneNumber,MotherName,MotherWork,MotherPhoneNumber,SchoolName,ScholarshipResult,Address,ClassGoPattern,Subject) like'%" + searchname + "%' ", con);
                     using (cmd)
                     {
                         ConnectionState state = con.State;
@@ -235,7 +334,7 @@ namespace BScSciencePlanet.DAL
                 SqlConnection con = new SqlConnection(connectionstring);
                 using (con)
                 {
-                    SqlCommand cmd = new SqlCommand("select ID,StudentFirstName,StudentLastName,Grade,SchoolName from BScStudent", con);
+                    SqlCommand cmd = new SqlCommand("select ID,StudentFirstName,StudentLastName,Grade,Subject from BScStudent", con);
                     using (cmd)
                     {
                         ConnectionState state = con.State;

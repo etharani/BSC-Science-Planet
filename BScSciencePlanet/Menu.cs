@@ -30,7 +30,7 @@ namespace BScSciencePlanet
 
         private void Showdetails_Click(object sender, EventArgs e)
         {
-            Form1 addnew=new Form1();
+            AddNew addnew=new AddNew();
             addnew.Show();
             this.Close();
         }
@@ -97,10 +97,10 @@ namespace BScSciencePlanet
             }
         }
 
-        private void Fulldetails_Click(object sender, EventArgs e)
+        private void btnPhysics_Click(object sender, EventArgs e)
         {
-            PersonalDetails personal = new PersonalDetails();
-            personal.Show();
+            PhysicsDetails physics = new PhysicsDetails();
+            physics.Show();
             this.Hide();
         }
 
@@ -112,6 +112,20 @@ namespace BScSciencePlanet
         private void btncancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnbio_Click(object sender, EventArgs e)
+        {
+            BioDetails bio = new BioDetails();
+            bio.Show();
+            this.Hide();
+        }
+
+        private void btntech_Click(object sender, EventArgs e)
+        {
+            TechnologyDetails technology = new TechnologyDetails();
+            technology.Show();
+            this.Hide();
         }
     }
 }

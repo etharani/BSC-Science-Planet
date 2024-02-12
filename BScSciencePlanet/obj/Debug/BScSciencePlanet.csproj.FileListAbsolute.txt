@@ -2,7 +2,6 @@ C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\bin\Debug\BScScien
 C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\bin\Debug\BScSciencePlanet.exe
 C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\bin\Debug\BScSciencePlanet.pdb
 C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.csproj.AssemblyReference.cache
-C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.Form1.resources
 C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.Properties.Resources.resources
 C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.csproj.GenerateResource.cache
 C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.csproj.CoreCompileInputs.cache
@@ -11,4 +10,7 @@ C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScScien
 C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.Home.resources
 C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.Menu.resources
 C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.Update.resources
-C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.PersonalDetails.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.AddNew.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.PhysicsDetails.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.BioDetails.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Debug\BScSciencePlanet.TechnologyDetails.resources
