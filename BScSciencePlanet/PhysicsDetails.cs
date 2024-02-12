@@ -13,7 +13,7 @@ namespace BScSciencePlanet
     
     public partial class PhysicsDetails : Form
     {
-        string connectionstring = "Server=DESKTOP-NMNKSVA;Database=BSC;User Id = sa; Password=thara4411;";
+        string connectionstring = "";
         DAL.Student fullstu;
         String id = null;
         public PhysicsDetails()
