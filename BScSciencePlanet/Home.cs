@@ -1,20 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BScSciencePlanet
 {
     public partial class Home : Form
     {
-        string connectionstring = "";
-        
+         string connectionstring = "Server=DESKTOP-NMNKSVA;Database=BSC;User Id = sa; Password=thara4411;";
+       // string connectionstring = ConfigurationManager.ConnectionStrings["connectionStrings"].ConnectionString;
         public Home()
         {
             InitializeComponent();

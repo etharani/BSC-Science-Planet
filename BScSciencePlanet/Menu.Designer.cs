@@ -75,8 +75,8 @@
             this.addnew.Location = new System.Drawing.Point(12, 175);
             this.addnew.Name = "addnew";
             this.addnew.Size = new System.Drawing.Size(259, 37);
-            this.addnew.TabIndex = 1;
-            this.addnew.Tag = "3";
+            this.addnew.TabIndex = 3;
+            this.addnew.Tag = "";
             this.addnew.Text = "Add New Student";
             this.addnew.UseVisualStyleBackColor = false;
             this.addnew.Click += new System.EventHandler(this.Showdetails_Click);
@@ -117,8 +117,8 @@
             this.update.Location = new System.Drawing.Point(11, 238);
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(259, 37);
-            this.update.TabIndex = 36;
-            this.update.Tag = "4";
+            this.update.TabIndex = 4;
+            this.update.Tag = "";
             this.update.Text = "Update Student Details";
             this.update.UseVisualStyleBackColor = false;
             this.update.Click += new System.EventHandler(this.update_Click);
@@ -130,8 +130,8 @@
             this.delete.Location = new System.Drawing.Point(8, 304);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(263, 37);
-            this.delete.TabIndex = 37;
-            this.delete.Tag = "5";
+            this.delete.TabIndex = 5;
+            this.delete.Tag = "";
             this.delete.Text = "Delete Student Details";
             this.delete.UseVisualStyleBackColor = false;
             this.delete.Click += new System.EventHandler(this.delete_Click);
@@ -143,8 +143,8 @@
             this.txtsearch.Location = new System.Drawing.Point(125, 114);
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(360, 27);
-            this.txtsearch.TabIndex = 42;
-            this.txtsearch.Tag = "2";
+            this.txtsearch.TabIndex = 1;
+            this.txtsearch.Tag = "";
             // 
             // btnsearch
             // 
@@ -155,8 +155,8 @@
             this.btnsearch.Location = new System.Drawing.Point(11, 108);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(108, 37);
-            this.btnsearch.TabIndex = 43;
-            this.btnsearch.Tag = "1";
+            this.btnsearch.TabIndex = 2;
+            this.btnsearch.Tag = "";
             this.btnsearch.Text = "Search";
             this.btnsearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsearch.UseVisualStyleBackColor = false;
@@ -169,8 +169,8 @@
             this.btnPhysics.Location = new System.Drawing.Point(12, 372);
             this.btnPhysics.Name = "btnPhysics";
             this.btnPhysics.Size = new System.Drawing.Size(259, 37);
-            this.btnPhysics.TabIndex = 46;
-            this.btnPhysics.Tag = "6";
+            this.btnPhysics.TabIndex = 6;
+            this.btnPhysics.Tag = "";
             this.btnPhysics.Text = "Physical Science Student Details";
             this.btnPhysics.UseVisualStyleBackColor = false;
             this.btnPhysics.Click += new System.EventHandler(this.btnPhysics_Click);
@@ -182,8 +182,8 @@
             this.btncancel.Location = new System.Drawing.Point(12, 567);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(210, 37);
-            this.btncancel.TabIndex = 47;
-            this.btncancel.Tag = "9";
+            this.btncancel.TabIndex = 9;
+            this.btncancel.Tag = "";
             this.btncancel.Text = "Cancel";
             this.btncancel.UseVisualStyleBackColor = false;
             this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
@@ -195,8 +195,8 @@
             this.btnbio.Location = new System.Drawing.Point(12, 438);
             this.btnbio.Name = "btnbio";
             this.btnbio.Size = new System.Drawing.Size(255, 37);
-            this.btnbio.TabIndex = 48;
-            this.btnbio.Tag = "7";
+            this.btnbio.TabIndex = 7;
+            this.btnbio.Tag = "";
             this.btnbio.Text = "Biological Science Student Details";
             this.btnbio.UseVisualStyleBackColor = false;
             this.btnbio.Click += new System.EventHandler(this.btnbio_Click);
@@ -208,8 +208,8 @@
             this.btntech.Location = new System.Drawing.Point(12, 502);
             this.btntech.Name = "btntech";
             this.btntech.Size = new System.Drawing.Size(255, 37);
-            this.btntech.TabIndex = 49;
-            this.btntech.Tag = "8";
+            this.btntech.TabIndex = 8;
+            this.btntech.Tag = "";
             this.btntech.Text = "Technology Student Details";
             this.btntech.UseVisualStyleBackColor = false;
             this.btntech.Click += new System.EventHandler(this.btntech_Click);
@@ -312,6 +312,7 @@
             this.Controls.Add(this.addnew);
             this.Controls.Add(this.dgv1);
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).EndInit();

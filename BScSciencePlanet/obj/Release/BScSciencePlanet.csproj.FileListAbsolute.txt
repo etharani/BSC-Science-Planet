@@ -1,0 +1,16 @@
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\bin\Release\BScSciencePlanet.exe.config
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\bin\Release\BScSciencePlanet.exe
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\bin\Release\BScSciencePlanet.pdb
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Release\BScSciencePlanet.csproj.AssemblyReference.cache
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Release\BScSciencePlanet.AddNew.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Release\BScSciencePlanet.BioDetails.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Release\BScSciencePlanet.Home.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Release\BScSciencePlanet.Menu.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Release\BScSciencePlanet.PhysicsDetails.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Release\BScSciencePlanet.Properties.Resources.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Release\BScSciencePlanet.TechnologyDetails.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Release\BScSciencePlanet.Update.resources
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Release\BScSciencePlanet.csproj.GenerateResource.cache
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Release\BScSciencePlanet.csproj.CoreCompileInputs.cache
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Release\BScSciencePlanet.exe
+C:\Users\thara\source\repos\BScSciencePlanet\BScSciencePlanet\obj\Release\BScSciencePlanet.pdb

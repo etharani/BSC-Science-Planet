@@ -52,6 +52,7 @@
             this.btnhome.Name = "btnhome";
             this.btnhome.Size = new System.Drawing.Size(95, 40);
             this.btnhome.TabIndex = 1;
+            this.btnhome.Tag = "";
             this.btnhome.Text = "Click me";
             this.btnhome.UseVisualStyleBackColor = false;
             this.btnhome.Click += new System.EventHandler(this.btnhome_Click);
@@ -64,6 +65,7 @@
             this.Controls.Add(this.btnhome);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

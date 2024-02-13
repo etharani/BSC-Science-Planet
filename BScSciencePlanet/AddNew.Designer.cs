@@ -241,84 +241,96 @@
             this.txtfirstname.Location = new System.Drawing.Point(191, 145);
             this.txtfirstname.Name = "txtfirstname";
             this.txtfirstname.Size = new System.Drawing.Size(351, 25);
-            this.txtfirstname.TabIndex = 19;
+            this.txtfirstname.TabIndex = 1;
+            this.txtfirstname.Tag = "";
             // 
             // txtfatherwork
             // 
             this.txtfatherwork.Location = new System.Drawing.Point(191, 271);
             this.txtfatherwork.Name = "txtfatherwork";
             this.txtfatherwork.Size = new System.Drawing.Size(351, 25);
-            this.txtfatherwork.TabIndex = 20;
+            this.txtfatherwork.TabIndex = 4;
+            this.txtfatherwork.Tag = "";
             // 
             // txtfathername
             // 
             this.txtfathername.Location = new System.Drawing.Point(191, 224);
             this.txtfathername.Name = "txtfathername";
             this.txtfathername.Size = new System.Drawing.Size(351, 25);
-            this.txtfathername.TabIndex = 21;
+            this.txtfathername.TabIndex = 3;
+            this.txtfathername.Tag = "";
             // 
             // txtbirth
             // 
             this.txtbirth.Location = new System.Drawing.Point(191, 183);
             this.txtbirth.Name = "txtbirth";
             this.txtbirth.Size = new System.Drawing.Size(351, 25);
-            this.txtbirth.TabIndex = 22;
+            this.txtbirth.TabIndex = 2;
+            this.txtbirth.Tag = "";
             // 
             // txtfatherphone
             // 
             this.txtfatherphone.Location = new System.Drawing.Point(191, 316);
             this.txtfatherphone.Name = "txtfatherphone";
             this.txtfatherphone.Size = new System.Drawing.Size(351, 25);
-            this.txtfatherphone.TabIndex = 23;
+            this.txtfatherphone.TabIndex = 5;
+            this.txtfatherphone.Tag = "";
             // 
             // txtschoolname
             // 
             this.txtschoolname.Location = new System.Drawing.Point(191, 357);
             this.txtschoolname.Name = "txtschoolname";
             this.txtschoolname.Size = new System.Drawing.Size(351, 25);
-            this.txtschoolname.TabIndex = 24;
+            this.txtschoolname.TabIndex = 6;
+            this.txtschoolname.Tag = "";
             // 
             // txtaddress
             // 
             this.txtaddress.Location = new System.Drawing.Point(191, 395);
             this.txtaddress.Name = "txtaddress";
             this.txtaddress.Size = new System.Drawing.Size(351, 25);
-            this.txtaddress.TabIndex = 25;
+            this.txtaddress.TabIndex = 7;
+            this.txtaddress.Tag = "";
             // 
             // txtclass
             // 
             this.txtclass.Location = new System.Drawing.Point(748, 395);
             this.txtclass.Name = "txtclass";
             this.txtclass.Size = new System.Drawing.Size(351, 25);
-            this.txtclass.TabIndex = 32;
+            this.txtclass.TabIndex = 17;
+            this.txtclass.Tag = "";
             // 
             // txtresult
             // 
             this.txtresult.Location = new System.Drawing.Point(748, 357);
             this.txtresult.Name = "txtresult";
             this.txtresult.Size = new System.Drawing.Size(351, 25);
-            this.txtresult.TabIndex = 31;
+            this.txtresult.TabIndex = 16;
+            this.txtresult.Tag = "";
             // 
             // txtmotherphone
             // 
             this.txtmotherphone.Location = new System.Drawing.Point(748, 316);
             this.txtmotherphone.Name = "txtmotherphone";
             this.txtmotherphone.Size = new System.Drawing.Size(351, 25);
-            this.txtmotherphone.TabIndex = 30;
+            this.txtmotherphone.TabIndex = 15;
+            this.txtmotherphone.Tag = "";
             // 
             // txtgrade
             // 
             this.txtgrade.Location = new System.Drawing.Point(748, 183);
             this.txtgrade.Name = "txtgrade";
             this.txtgrade.Size = new System.Drawing.Size(351, 25);
-            this.txtgrade.TabIndex = 29;
+            this.txtgrade.TabIndex = 12;
+            this.txtgrade.Tag = "";
             // 
             // txtmothername
             // 
             this.txtmothername.Location = new System.Drawing.Point(748, 224);
             this.txtmothername.Name = "txtmothername";
             this.txtmothername.Size = new System.Drawing.Size(351, 25);
-            this.txtmothername.TabIndex = 28;
+            this.txtmothername.TabIndex = 13;
+            this.txtmothername.Tag = "";
             // 
             // txtmotherwork
             // 
@@ -326,14 +338,16 @@
             this.txtmotherwork.Location = new System.Drawing.Point(748, 271);
             this.txtmotherwork.Name = "txtmotherwork";
             this.txtmotherwork.Size = new System.Drawing.Size(351, 25);
-            this.txtmotherwork.TabIndex = 27;
+            this.txtmotherwork.TabIndex = 14;
+            this.txtmotherwork.Tag = "";
             // 
             // txtlastname
             // 
             this.txtlastname.Location = new System.Drawing.Point(748, 145);
             this.txtlastname.Name = "txtlastname";
             this.txtlastname.Size = new System.Drawing.Size(351, 25);
-            this.txtlastname.TabIndex = 26;
+            this.txtlastname.TabIndex = 11;
+            this.txtlastname.Tag = "";
             // 
             // btnsave
             // 
@@ -342,7 +356,8 @@
             this.btnsave.Location = new System.Drawing.Point(859, 451);
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(112, 34);
-            this.btnsave.TabIndex = 33;
+            this.btnsave.TabIndex = 19;
+            this.btnsave.Tag = "";
             this.btnsave.Text = "Save";
             this.btnsave.UseVisualStyleBackColor = false;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
@@ -369,7 +384,8 @@
             this.btngomenu.Location = new System.Drawing.Point(727, 451);
             this.btngomenu.Name = "btngomenu";
             this.btngomenu.Size = new System.Drawing.Size(117, 34);
-            this.btngomenu.TabIndex = 35;
+            this.btngomenu.TabIndex = 18;
+            this.btngomenu.Tag = "";
             this.btngomenu.Text = "Go to Menu";
             this.btngomenu.UseVisualStyleBackColor = false;
             this.btngomenu.Click += new System.EventHandler(this.btngomenu_Click);
@@ -396,7 +412,8 @@
             this.btncancel.Location = new System.Drawing.Point(987, 451);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(112, 34);
-            this.btncancel.TabIndex = 36;
+            this.btncancel.TabIndex = 20;
+            this.btncancel.Tag = "";
             this.btncancel.Text = "Cancel";
             this.btncancel.UseVisualStyleBackColor = false;
             this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
@@ -417,8 +434,9 @@
             this.rdbPhysice.Location = new System.Drawing.Point(193, 439);
             this.rdbPhysice.Name = "rdbPhysice";
             this.rdbPhysice.Size = new System.Drawing.Size(128, 21);
-            this.rdbPhysice.TabIndex = 38;
+            this.rdbPhysice.TabIndex = 8;
             this.rdbPhysice.TabStop = true;
+            this.rdbPhysice.Tag = "";
             this.rdbPhysice.Text = "Physical Science";
             this.rdbPhysice.UseVisualStyleBackColor = true;
             // 
@@ -428,8 +446,9 @@
             this.rdbtech.Location = new System.Drawing.Point(469, 439);
             this.rdbtech.Name = "rdbtech";
             this.rdbtech.Size = new System.Drawing.Size(96, 21);
-            this.rdbtech.TabIndex = 39;
+            this.rdbtech.TabIndex = 10;
             this.rdbtech.TabStop = true;
+            this.rdbtech.Tag = "";
             this.rdbtech.Text = "Technology";
             this.rdbtech.UseVisualStyleBackColor = true;
             // 
@@ -439,12 +458,13 @@
             this.rdbbio.Location = new System.Drawing.Point(327, 439);
             this.rdbbio.Name = "rdbbio";
             this.rdbbio.Size = new System.Drawing.Size(136, 21);
-            this.rdbbio.TabIndex = 40;
+            this.rdbbio.TabIndex = 9;
             this.rdbbio.TabStop = true;
+            this.rdbbio.Tag = "";
             this.rdbbio.Text = "Biological Science";
             this.rdbbio.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // AddNew
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -493,8 +513,9 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "AddNew";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "AddNew";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

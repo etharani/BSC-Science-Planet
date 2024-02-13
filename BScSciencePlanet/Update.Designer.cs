@@ -91,7 +91,7 @@
             this.btngomenu.Location = new System.Drawing.Point(741, 456);
             this.btngomenu.Name = "btngomenu";
             this.btngomenu.Size = new System.Drawing.Size(119, 34);
-            this.btngomenu.TabIndex = 67;
+            this.btngomenu.TabIndex = 17;
             this.btngomenu.Text = "Go to Menu";
             this.btngomenu.UseVisualStyleBackColor = false;
             this.btngomenu.Click += new System.EventHandler(this.btngomenu_Click);
@@ -118,7 +118,7 @@
             this.btnupdate.Location = new System.Drawing.Point(879, 456);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(112, 34);
-            this.btnupdate.TabIndex = 65;
+            this.btnupdate.TabIndex = 18;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = false;
             this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
@@ -128,35 +128,35 @@
             this.txtclass.Location = new System.Drawing.Point(768, 400);
             this.txtclass.Name = "txtclass";
             this.txtclass.Size = new System.Drawing.Size(351, 22);
-            this.txtclass.TabIndex = 64;
+            this.txtclass.TabIndex = 16;
             // 
             // txtresult
             // 
             this.txtresult.Location = new System.Drawing.Point(768, 362);
             this.txtresult.Name = "txtresult";
             this.txtresult.Size = new System.Drawing.Size(351, 22);
-            this.txtresult.TabIndex = 63;
+            this.txtresult.TabIndex = 15;
             // 
             // txtmotherphone
             // 
             this.txtmotherphone.Location = new System.Drawing.Point(768, 321);
             this.txtmotherphone.Name = "txtmotherphone";
             this.txtmotherphone.Size = new System.Drawing.Size(351, 22);
-            this.txtmotherphone.TabIndex = 62;
+            this.txtmotherphone.TabIndex = 14;
             // 
             // txtgrade
             // 
             this.txtgrade.Location = new System.Drawing.Point(768, 188);
             this.txtgrade.Name = "txtgrade";
             this.txtgrade.Size = new System.Drawing.Size(351, 22);
-            this.txtgrade.TabIndex = 61;
+            this.txtgrade.TabIndex = 11;
             // 
             // txtmothername
             // 
             this.txtmothername.Location = new System.Drawing.Point(768, 229);
             this.txtmothername.Name = "txtmothername";
             this.txtmothername.Size = new System.Drawing.Size(351, 22);
-            this.txtmothername.TabIndex = 60;
+            this.txtmothername.TabIndex = 12;
             // 
             // txtmotherwork
             // 
@@ -164,63 +164,63 @@
             this.txtmotherwork.Location = new System.Drawing.Point(768, 276);
             this.txtmotherwork.Name = "txtmotherwork";
             this.txtmotherwork.Size = new System.Drawing.Size(351, 22);
-            this.txtmotherwork.TabIndex = 59;
+            this.txtmotherwork.TabIndex = 13;
             // 
             // txtlastname
             // 
             this.txtlastname.Location = new System.Drawing.Point(768, 150);
             this.txtlastname.Name = "txtlastname";
             this.txtlastname.Size = new System.Drawing.Size(351, 22);
-            this.txtlastname.TabIndex = 58;
+            this.txtlastname.TabIndex = 11;
             // 
             // txtaddress
             // 
             this.txtaddress.Location = new System.Drawing.Point(211, 400);
             this.txtaddress.Name = "txtaddress";
             this.txtaddress.Size = new System.Drawing.Size(351, 22);
-            this.txtaddress.TabIndex = 57;
+            this.txtaddress.TabIndex = 7;
             // 
             // txtschoolname
             // 
             this.txtschoolname.Location = new System.Drawing.Point(211, 362);
             this.txtschoolname.Name = "txtschoolname";
             this.txtschoolname.Size = new System.Drawing.Size(351, 22);
-            this.txtschoolname.TabIndex = 56;
+            this.txtschoolname.TabIndex = 6;
             // 
             // txtfatherphone
             // 
             this.txtfatherphone.Location = new System.Drawing.Point(211, 321);
             this.txtfatherphone.Name = "txtfatherphone";
             this.txtfatherphone.Size = new System.Drawing.Size(351, 22);
-            this.txtfatherphone.TabIndex = 55;
+            this.txtfatherphone.TabIndex = 5;
             // 
             // txtbirth
             // 
             this.txtbirth.Location = new System.Drawing.Point(211, 188);
             this.txtbirth.Name = "txtbirth";
             this.txtbirth.Size = new System.Drawing.Size(351, 22);
-            this.txtbirth.TabIndex = 54;
+            this.txtbirth.TabIndex = 2;
             // 
             // txtfathername
             // 
             this.txtfathername.Location = new System.Drawing.Point(211, 229);
             this.txtfathername.Name = "txtfathername";
             this.txtfathername.Size = new System.Drawing.Size(351, 22);
-            this.txtfathername.TabIndex = 53;
+            this.txtfathername.TabIndex = 3;
             // 
             // txtfatherwork
             // 
             this.txtfatherwork.Location = new System.Drawing.Point(211, 276);
             this.txtfatherwork.Name = "txtfatherwork";
             this.txtfatherwork.Size = new System.Drawing.Size(351, 22);
-            this.txtfatherwork.TabIndex = 52;
+            this.txtfatherwork.TabIndex = 4;
             // 
             // txtfirstname
             // 
             this.txtfirstname.Location = new System.Drawing.Point(211, 150);
             this.txtfirstname.Name = "txtfirstname";
             this.txtfirstname.Size = new System.Drawing.Size(351, 22);
-            this.txtfirstname.TabIndex = 51;
+            this.txtfirstname.TabIndex = 1;
             // 
             // LScholarshipResult
             // 
@@ -394,7 +394,7 @@
             this.btncancel.Location = new System.Drawing.Point(1007, 456);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(112, 34);
-            this.btncancel.TabIndex = 69;
+            this.btncancel.TabIndex = 19;
             this.btncancel.Text = "Cancel";
             this.btncancel.UseVisualStyleBackColor = false;
             this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
@@ -402,10 +402,10 @@
             // rdbbio
             // 
             this.rdbbio.AutoSize = true;
-            this.rdbbio.Location = new System.Drawing.Point(347, 445);
+            this.rdbbio.Location = new System.Drawing.Point(350, 445);
             this.rdbbio.Name = "rdbbio";
             this.rdbbio.Size = new System.Drawing.Size(140, 20);
-            this.rdbbio.TabIndex = 73;
+            this.rdbbio.TabIndex = 9;
             this.rdbbio.TabStop = true;
             this.rdbbio.Text = "Biological Science";
             this.rdbbio.UseVisualStyleBackColor = true;
@@ -413,10 +413,10 @@
             // rdbtech
             // 
             this.rdbtech.AutoSize = true;
-            this.rdbtech.Location = new System.Drawing.Point(493, 446);
+            this.rdbtech.Location = new System.Drawing.Point(502, 445);
             this.rdbtech.Name = "rdbtech";
             this.rdbtech.Size = new System.Drawing.Size(100, 20);
-            this.rdbtech.TabIndex = 72;
+            this.rdbtech.TabIndex = 10;
             this.rdbtech.TabStop = true;
             this.rdbtech.Text = "Technology";
             this.rdbtech.UseVisualStyleBackColor = true;
@@ -424,10 +424,10 @@
             // rdbPhysice
             // 
             this.rdbPhysice.AutoSize = true;
-            this.rdbPhysice.Location = new System.Drawing.Point(213, 445);
+            this.rdbPhysice.Location = new System.Drawing.Point(211, 445);
             this.rdbPhysice.Name = "rdbPhysice";
             this.rdbPhysice.Size = new System.Drawing.Size(131, 20);
-            this.rdbPhysice.TabIndex = 71;
+            this.rdbPhysice.TabIndex = 8;
             this.rdbPhysice.TabStop = true;
             this.rdbPhysice.Text = "Physical Science";
             this.rdbPhysice.UseVisualStyleBackColor = true;
@@ -488,6 +488,7 @@
             this.Controls.Add(this.LStudentFirstName);
             this.Controls.Add(this.label1);
             this.Name = "Update";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update";
             this.Load += new System.EventHandler(this.Update_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

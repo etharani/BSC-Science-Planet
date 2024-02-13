@@ -12,7 +12,7 @@ namespace BScSciencePlanet
 {
     public partial class BioDetails : Form
     {
-        string connectionstring = "";
+        string connectionstring = "Server=DESKTOP-NMNKSVA;Database=BSC;User Id = sa; Password=thara4411;";
         DAL.Student biostu;
         String id = null;
         public BioDetails()
@@ -28,7 +28,10 @@ namespace BScSciencePlanet
 
         private void btncancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("Are you want to exit application?", "Exit Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         private void btngomenu_Click(object sender, EventArgs e)

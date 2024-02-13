@@ -11,7 +11,7 @@ namespace BScSciencePlanet.DAL
 {
     public class Student
     {
-        string connectionstring = "";
+        string connectionstring = "Server=DESKTOP-NMNKSVA;Database=BSC;User Id = sa; Password=thara4411;";
         public Boolean Create(String firstname, String lastname, String dateofbirth, String grade, String fathername, String fatherwork, String fatherphone, String mothername, String motherwork, String motherphone, String schoolname,String result, String address, String pattern,String subject)
         {
             try
@@ -161,7 +161,7 @@ namespace BScSciencePlanet.DAL
                 SqlConnection con = new SqlConnection(connectionstring);
                 using (con)
                 {
-                    SqlCommand cmd = new SqlCommand("select * from BScStudent where Subject='Technology Science'", con);
+                    SqlCommand cmd = new SqlCommand("select * from BScStudent where Subject='Technology'", con);
                     using (cmd)
                     {
                         ConnectionState state = con.State;

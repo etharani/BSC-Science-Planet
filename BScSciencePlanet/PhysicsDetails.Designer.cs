@@ -101,7 +101,8 @@
             this.btncancel.Location = new System.Drawing.Point(1028, 595);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(112, 34);
-            this.btncancel.TabIndex = 69;
+            this.btncancel.TabIndex = 4;
+            this.btncancel.Tag = "";
             this.btncancel.Text = "Cancel";
             this.btncancel.UseVisualStyleBackColor = false;
             this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
@@ -113,7 +114,8 @@
             this.btngomenu.Location = new System.Drawing.Point(896, 595);
             this.btngomenu.Name = "btngomenu";
             this.btngomenu.Size = new System.Drawing.Size(126, 34);
-            this.btngomenu.TabIndex = 70;
+            this.btngomenu.TabIndex = 3;
+            this.btngomenu.Tag = "";
             this.btngomenu.Text = "Go to Menu";
             this.btngomenu.UseVisualStyleBackColor = false;
             this.btngomenu.Click += new System.EventHandler(this.btngomenu_Click);
@@ -125,7 +127,8 @@
             this.txtsearch.Location = new System.Drawing.Point(419, 127);
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(360, 27);
-            this.txtsearch.TabIndex = 71;
+            this.txtsearch.TabIndex = 1;
+            this.txtsearch.Tag = "";
             // 
             // btnsearch
             // 
@@ -136,7 +139,8 @@
             this.btnsearch.Location = new System.Drawing.Point(305, 121);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(108, 37);
-            this.btnsearch.TabIndex = 72;
+            this.btnsearch.TabIndex = 2;
+            this.btnsearch.Tag = "";
             this.btnsearch.Text = "Search";
             this.btnsearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsearch.UseVisualStyleBackColor = false;
@@ -186,6 +190,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "PhysicsDetails";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PersonalDetails";
             this.Load += new System.EventHandler(this.PhysicsDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.physicsdgv)).EndInit();

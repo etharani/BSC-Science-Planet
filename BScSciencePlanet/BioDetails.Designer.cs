@@ -52,7 +52,8 @@
             this.btnsearch.Location = new System.Drawing.Point(306, 121);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(108, 37);
-            this.btnsearch.TabIndex = 81;
+            this.btnsearch.TabIndex = 2;
+            this.btnsearch.Tag = "";
             this.btnsearch.Text = "Search";
             this.btnsearch.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsearch.UseVisualStyleBackColor = false;
@@ -65,7 +66,8 @@
             this.txtsearch.Location = new System.Drawing.Point(420, 127);
             this.txtsearch.Name = "txtsearch";
             this.txtsearch.Size = new System.Drawing.Size(360, 27);
-            this.txtsearch.TabIndex = 80;
+            this.txtsearch.TabIndex = 1;
+            this.txtsearch.Tag = "";
             // 
             // btngomenu
             // 
@@ -74,7 +76,8 @@
             this.btngomenu.Location = new System.Drawing.Point(897, 595);
             this.btngomenu.Name = "btngomenu";
             this.btngomenu.Size = new System.Drawing.Size(126, 34);
-            this.btngomenu.TabIndex = 79;
+            this.btngomenu.TabIndex = 3;
+            this.btngomenu.Tag = "";
             this.btngomenu.Text = "Go to Menu";
             this.btngomenu.UseVisualStyleBackColor = false;
             this.btngomenu.Click += new System.EventHandler(this.btngomenu_Click);
@@ -86,7 +89,8 @@
             this.btncancel.Location = new System.Drawing.Point(1029, 595);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(112, 34);
-            this.btncancel.TabIndex = 78;
+            this.btncancel.TabIndex = 4;
+            this.btncancel.Tag = "";
             this.btncancel.Text = "Cancel";
             this.btncancel.UseVisualStyleBackColor = false;
             this.btncancel.Click += new System.EventHandler(this.btncancel_Click);
@@ -186,6 +190,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "BioDetails";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BioDetails";
             this.Load += new System.EventHandler(this.BioDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.biodgv)).EndInit();

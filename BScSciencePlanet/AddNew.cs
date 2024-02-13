@@ -159,6 +159,8 @@ namespace BScSciencePlanet
                     if (dialogR == DialogResult.No)
                     {
                         this.Close();
+                        Menu menu1= new Menu();  
+                        menu1.Show();
                     }
 
                 }
@@ -179,7 +181,10 @@ namespace BScSciencePlanet
 
         private void btncancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("Are you want to exit application?", "Exit Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }
