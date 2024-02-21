@@ -11,7 +11,7 @@ namespace BScSciencePlanet.DAL
 {
     public class Student
     {
-        string connectionstring = "Server=DESKTOP-NMNKSVA;Database=BSC;User Id = sa; Password=thara4411;";
+        string connectionstring = "Server=DESKTOP-BCT8GR0;Database=BSC;User Id = sa; Password=thara4411;";
         public Boolean Create(String firstname, String lastname, String dateofbirth, String grade, String fathername, String fatherwork, String fatherphone, String mothername, String motherwork, String motherphone, String schoolname,String result, String address, String pattern,String subject)
         {
             try
